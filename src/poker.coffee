@@ -8,6 +8,10 @@
 #   hubot poker me - Start a game of Texas Holdem!
 #   hubot poker deal card - Deal two cards
 #   hubot poker add <user> - Add a user to the game
+#   hubot poker stat - Print the game stats
+#   hubot poker river - River
+#   hubot poker game - Get the game stats in JSON format
+#   hubot poker save - Saves the game
 #
 # Notes:
 #   This depends heavily on the module poker-sim (https://www.npmjs.com/package/poker-sim).
@@ -51,11 +55,11 @@ module.exports = (robot) ->
     msg.send game.communityCard()
 
   #At any time you can return the JSON of the game status
-  robot.responds /poker river/, (msg) ->
+  robot.responds /poker game/, (msg) ->
     msg.send game.getGame()
 
   #TODO: Save the game to robot.brain. 
-  robot.responds /poker river/, (msg) ->
+  robot.responds /poker save/, (msg) ->
     msg.send game.getSave()
 
 
