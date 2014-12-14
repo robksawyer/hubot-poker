@@ -1,7 +1,7 @@
 {
   "name": "hubot-poker",
   "description": "Allow hubot to play a game of holdem.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "robksawyer <robksawyer@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -13,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-poker.git"
+    "url": "git://github.com/robksawyer/hubot-poker.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-poker/issues"
+    "url": "https://github.com/robksawyer/hubot-poker/issues"
   },
   "dependencies": {
     "coffee-script": "~1.6",
