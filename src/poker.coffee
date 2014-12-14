@@ -28,7 +28,7 @@ module.exports = (robot) ->
     msg.reply "Game started! Add some hands to the game via the 'add hand <username>' command."
 
   #Add the player to the hand
-  robot.responds /poker add (@?([\w .\-]+)\?*$| me)/, (msg) ->
+  robot.respond /poker add (@?([\w .\-]+)\?*$| me)/i, (msg) ->
     user = msg.match[1]
     if user.trim() == "me"
       users = robot.brain.usersForFuzzyName(name)
@@ -39,27 +39,27 @@ module.exports = (robot) ->
 
   #Deal two cards (getting fancy with this and trying to add more or less than 2 will probably get you in trouble)
   #TODO: Count the players and deal cards appropriately.
-  robot.responds /poker deal card(s)?/, (msg) ->
+  robot.respond /poker deal card(s)?/i, (msg) ->
     msg.send game.dealCard().dealCard()
 
   #call evalHands() to process win percentages using the current state of the game
-  robot.responds /poker eval/, (msg) ->
+  robot.respond /poker eval/i, (msg) ->
     msg.send game.evalHands()
 
   #Deal two cards (getting fancy with this and trying to add more or less than 2 will probably get you in trouble)
-  robot.responds /poker stat(us)?/, (msg) ->
+  robot.respond /poker stat(us)?/i, (msg) ->
     msg.send game.printGame()
 
   #River
-  robot.responds /poker river/, (msg) ->
+  robot.respond /poker river/i, (msg) ->
     msg.send game.communityCard()
 
   #At any time you can return the JSON of the game status
-  robot.responds /poker game/, (msg) ->
+  robot.respond /poker game/i, (msg) ->
     msg.send game.getGame()
 
   #TODO: Save the game to robot.brain. 
-  robot.responds /poker save/, (msg) ->
+  robot.respond /poker save/i, (msg) ->
     msg.send game.getSave()
 
 
