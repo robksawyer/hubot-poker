@@ -22,6 +22,12 @@ Then add **hubot-poker** to your `external-scripts.json`:
 
 ```
 user1>> hubot poker me
-hubot>> hello!
+hubot>> Game started! Add some hands to the game via the 'add hand <username>' command.
+
+user1>> hubot poker add @rob
+hubot>> @rob added to the game.
+
+user1>> hubot poker deal cards
+hubot>> Good luck!
 
 ```
