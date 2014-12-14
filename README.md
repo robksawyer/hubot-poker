@@ -19,6 +19,7 @@ Then add **hubot-poker** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
+user1>> hubot poker me
 hubot>> hello!
+
 ```
