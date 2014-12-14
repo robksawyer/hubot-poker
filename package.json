@@ -1,0 +1,39 @@
+{
+  "name": "hubot-poker",
+  "description": "Allow hubot to play a game of holdem.",
+  "version": "0.0.0",
+  "author": "robksawyer <robksawyer@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "poker",
+    "holdem",
+    "hubot",
+    "hubot-scripts",
+    "game"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-poker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-poker/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "poker-sim": "0.0.6"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "grunt test"
+  }
+}
