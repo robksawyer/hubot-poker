@@ -2,6 +2,8 @@
 
 # WARNING: This is not working at the moment. It's a work in progress.
 
+# GOALS: See the TODO section of poker.coffee
+
 Allow hubot to play a game of holdem.
 
 See [`src/poker.coffee`](src/poker.coffee) for full documentation.
