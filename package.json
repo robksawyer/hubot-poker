@@ -1,15 +1,15 @@
 {
   "name": "hubot-poker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Texas Hold 'em and some weirdo 6 digit poker-esque games.",
   "main": "js/hubot-poker-dealer.coffee",
   "files": [
     "js",
     "spec"
   ],
-  "repository" : {
+  "repository": {
     "type": "git",
-    "url":  "git://github.com/robksawyer/hubot-poker"
+    "url": "git://github.com/robksawyer/hubot-poker"
   },
   "keywords": [
     "game",
