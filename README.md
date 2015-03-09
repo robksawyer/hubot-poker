@@ -23,3 +23,9 @@ starter/experimental. The third is a game call Reverse Hold 'em which is
 a loose take on Texas Hold 'em where all of the players hands are
 visible, but the hole cards (digits) are hidden until the end. Checkout
 its [README](js/token-poker/README.md).
+
+## Contributors 
+
+[chrismo](https://github.com/chrismo) - Genius behind the version available now.
+
+[robksawyer](https://github.com/robksawyer) - Created a hubot poker game that sucked and then later was informed of chrismo's. I then merged his version into my repo since I also had [hubot-poker](https://www.npmjs.com/package/hubot-poker) on <https://www.npmjs.com>.
