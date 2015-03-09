@@ -1,35 +1,25 @@
-# hubot-poker
+# Hubot Poker
 
-# WARNING: This is not working at the moment. It's a work in progress.
+Let's play some poker. Hubot-style.
 
-# GOALS: See the TODO section of poker.coffee
+This all started as a bit of a lark screwing around with analyzing
+6-digit SecurID tokens for poker-type patterns with fellow
+LivingSocialites. Turned it into a few games that we'd play from
+time-to-time in Campfire, though they were limited in that there was no
+way to deal 'digits' to players privately.
 
-Allow hubot to play a game of holdem.
+Then we went to Slack and that opened up some possibilities for dealing
+cards. I made a Texas Hold 'em-styled game and here we are.
 
-See [`src/poker.coffee`](src/poker.coffee) for full documentation.
+## Card Poker
 
-## Installation
+The only card-styled game thus far is Texas Hold 'em - checkout its
+[README](js/card-poker/README.md).
 
-In hubot project repo, run:
+## Token Poker
 
-`npm install hubot-poker --save`
-
-Then add **hubot-poker** to your `external-scripts.json`:
-
-```json
-["hubot-poker"]
-```
-
-## Sample Interaction
-
-```
-user1>> hubot poker me
-hubot>> Game started! Add some hands to the game via the 'add hand <username>' command.
-
-user1>> hubot poker add @rob
-hubot>> @rob added to the game.
-
-user1>> hubot poker deal cards
-hubot>> Good luck!
-
-```
+There are three different games, though two of them are only
+starter/experimental. The third is a game call Reverse Hold 'em which is
+a loose take on Texas Hold 'em where all of the players hands are
+visible, but the hole cards (digits) are hidden until the end. Checkout
+its [README](js/token-poker/README.md).
